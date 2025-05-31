@@ -1,0 +1,91 @@
+body{
+    background-image: url('Imageminicial.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* garante que o fundo cubra toda a altura da tela */
+    margin: 0; /* remove espaçamentos padrão do body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cadastro_login{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    width: 700px;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.2); /* preto com 50% de transparência */
+    /*background-color: rgba(255, 255, 255, 0.2); /* branco quase transparente */
+    
+}
+#cadastro_login:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+#cadastro_login:hover input {
+    background-color: white;
+}
+#cadastro_login:hover label {
+    color: white;
+}
+img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 8vh; 
+    margin: 30px; /* remove espaçamentos padrão do body */
+}
+img:hover{
+    height: 11vh; 
+}
+label{
+    color: black;
+    margin-bottom: 10px;
+    gap: 3px;
+}
+
+label:hover{
+    color: white;
+}
+
+input{
+    display: flex;
+    flex-direction:  inherit;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 25px;
+    border-radius: 6px;
+    width: 350px;
+}
+input:hover{
+    background-color: white;
+}
+.btnMostrar{
+    width: auto;
+    background: none;
+    position: relative;
+    top: -36px; left: 162px;
+    
+    cursor: pointer;
+    font-size: 16px;
+}
+#Flogin, #Fcadastro{
+    color: black;
+    font-weight: bold
+}
+#Flogin:hover, #Fcadastro:hover{
+    color: salmon;
+    cursor: pointer;
+}
+#Fcadastro{
+    display: none;
+}
+
+#Enviar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    cursor: pointer;
+}
