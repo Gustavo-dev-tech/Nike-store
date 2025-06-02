@@ -7,33 +7,51 @@
     <link rel="stylesheet" href="formularios.css">
 </head>
 <body>
+
+                    <!-- CADASTRO -->
         <div id="cadastro_login">
-            
+
             <h1 id="titulo">Tela de Cadastro</h1>
-            <img src="Nike.webp" alt="Nike" onclick="nike()">
+            <img src="Nike.webp" alt="Nike" ondblclick="nike2()" onclick="nike()">
             
-            <label class="label" > Digite seu nome  
-                <input type="text" id="nome" required >
-            </label>
+            <!-- FORMULARIO DE CADASTRO -->
+            <form id="formCad" >    
+                <label class="label" > Digite seu nome  
+                    <input type="text" id="nome" required >
+                </label>
 
-            <label class="label">Digite seu e-mail 
-            <input type="email" id="email" required>
-            </label>
+                <label class="label">Digite seu e-mail 
+                <input type="email" id="email" required>
+                </label>
 
-            <label class="label">Digite sua senha
-            <input type="password" id="senha" value="">
-            </label>
-             <input type="checkbox" class="btnMostrar" onclick="mostrarSenha()" > 
-             <p class="btnMostrar">Mostrar Senha</p>
+                <label class="label">Digite sua senha
+                <input type="password" id="senha" >
+                </label>
+                
+                <input type="checkbox" id="btnMostrar" onclick="mostrarSenha()" > 
+                <label id="btnMostrartxt">Mostrar Senha</label>
 
-            <label class="label">Confirme sua senha
-            <input type="password" id="confisenha">
-            </label>
-            <p id="Flogin" onclick="Flogin()">Ja tem cadastro? logue aqui!
+                <label class="label">Confirme sua senha
+                <input type="password" id="confisenha">
+                </label>
+            </form>
+            <!-- LOGIN -->
+            <form id="Log">
+                
+                <label class="labelLog">Digite seu e-mail 
+                <input type="email" id="emailLogin" required>
+                </label>
+                <label class="labelLog">Digite sua senha 
+                <input type="password" id="senhaLogin" required>
+                </label>
+
+            </form>
+
+            <p id="Flogin" onclick="Flogin()">Ja tem cadastro? Faça login aqui!
             </p>
             <p id="Fcadastro" onclick="Fcadastro()"> Faça cadastro aqui!
             </p>
-            <input type="submit" id="Enviar" value="Enviar" onclick="Enviar()">
+            <input type="submit" id="enviar" value="Cadastrar" onclick="Enviar()">
 
         </div>
        <script src="formularios.js"></script>

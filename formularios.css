@@ -8,17 +8,26 @@ body{
     justify-content: center;
     align-items: center;
 }
-#cadastro_login{
+
+#cadastro_login {
     display: flex;
     align-items: center;
     flex-direction: column;
+    border-radius: 50px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0, 0.2); /* preto com 50% de transparência */
+    /*background-color: rgba(255, 255, 255, 0.2); /* branco quase transparente */
     color: rgba(255, 255, 255, 0.5);
     width: 700px;
     height: 700px;
-    background-color: rgba(0, 0, 0, 0.2); /* preto com 50% de transparência */
-    /*background-color: rgba(255, 255, 255, 0.2); /* branco quase transparente */
     
+    
+}
+#formCad{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 #cadastro_login:hover{
     background-color: rgba(0, 0, 0, 0.5);
@@ -27,47 +36,42 @@ body{
 #cadastro_login:hover input {
     background-color: white;
 }
-#cadastro_login:hover label {
+#cadastro_login:hover label, p {
     color: white;
 }
 img{
+    width: auto;
+    border-radius: 40%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 8vh; 
-    margin: 30px; /* remove espaçamentos padrão do body */
+    height: 80px; 
+    margin: 40px; /* remove espaçamentos padrão do body */
 }
 img:hover{
-    height: 11vh; 
-}
-label{
-    color: black;
-    margin-bottom: 10px;
-    gap: 3px;
-}
-
-label:hover{
-    color: white;
+    height: 13vh; 
 }
 
 input{
     display: flex;
     flex-direction:  inherit;
     background-color: rgba(255, 255, 255, 0.05);
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 6px;
     width: 350px;
+    height: 25px;
 }
-input:hover{
-    background-color: white;
-}
-.btnMostrar{
-    width: auto;
-    background: none;
+
+#btnMostrar{
     position: relative;
-    top: -36px; left: 162px;
-    
+    top: -45px; left: 162px;
     cursor: pointer;
-    font-size: 16px;
+    width: 14px;
+}
+#btnMostrartxt{
+    position: relative;
+    font-size: 14px;
+    top: 22px; left: 162px;
+    margin-top: -85px;
 }
 #Flogin, #Fcadastro{
     color: black;
@@ -81,11 +85,14 @@ input:hover{
     display: none;
 }
 
-#Enviar{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
+#enviar{
     width: 100px;
     cursor: pointer;
+    
+}
+
+
+#emailLogin, #senhaLogin, #enviarLogin, .labelLog{
+    display: none;
+    margin-top: 7px;
 }
