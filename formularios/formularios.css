@@ -1,5 +1,5 @@
 body{
-    background-image: url('Imageminicial.png');
+    background-image: url('../imagens/Imageminicial.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh; /* garante que o fundo cubra toda a altura da tela */
@@ -20,9 +20,24 @@ body{
     color: rgba(255, 255, 255, 0.5);
     width: 700px;
     height: 700px;
+    overflow: hidden;
     
     
 }
+/*ANIMAÇÕES*/
+#TESTE{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*background-color: rgba(255, 255, 255, 0.2); /* branco quase transparente */
+    
+    position: relative; top: 90%;
+    opacity: 0.7;
+    transform: translateY(-110%); /* Distancia que ele ira percorrer */
+    transition: transform 2s ease; /* Tempo que ele ira levar para subir */
+}
+
+
 #formCad{
     gap: 15px;
     display: flex;
@@ -48,7 +63,8 @@ img{
     margin: 40px; /* remove espaçamentos padrão do body */
 }
 img:hover{
-    height: 13vh; 
+    height: 12vh; 
+    cursor: pointer;
 }
 
 input{

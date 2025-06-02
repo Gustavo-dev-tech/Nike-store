@@ -19,6 +19,9 @@
         //FORMULARIOS
         let formCad = document.getElementById('formCad')
 
+        //TESTE de animação
+        let TESTE = document.getElementById('TESTE')
+
         //Enviar
         let enviar = document.getElementById('enviar')
         
@@ -28,6 +31,10 @@
 
         //Fazendo Login
         function Flogin(){
+            
+            //TESTE
+            TESTE.style.top =  '80%'//Altura que ficara apenas com os elementos de LOGIN
+
             titulo.innerHTML = ('Tela de Login') // Titulo
             login.style.display = ('none') //Flogin 'ja tem cadastro?'
             cadastro.style.display = ('block') //Fcadastro 'faça cadastro aq'
@@ -40,6 +47,7 @@
             label[2].style.display = ('none') // senha
             label[3].style.display = ('none') // mostrar senha
             
+
 
             btnMostrar.style.display = ('none')
             btnMostrartxt.style.display = ('none')
@@ -54,6 +62,8 @@
         }
         //Fazendo Cadastro
         function Fcadastro(){
+            TESTE.style.top =  '90%' //Altura que ficara apenas com os elementos de CADASTRO
+
             titulo.innerHTML = ('Tela de Cadastro')
             login.style.display = ('block')
             cadastro.style.display = ('none') //Fcadastro 'faça cadastro aq'
@@ -63,10 +73,10 @@
             label[0].style.display = ('block') //nome
             label[1].style.display = ('block') // email
             label[2].style.display = ('block') // senha
-            confisenha.style.display = ('block') // confirmar senha
+            label[3].style.display = ('block') // confirmar senha
 
-            btnMostrar.style.display = ('block')
-            btnMostrartxt.style.display = ('block')
+            btnMostrar.style.display = ('block') // botao mostrar senha
+            btnMostrartxt.style.display = ('block') //texto mostrar senha
 
             labelL[0].style.display =('none')
             labelL[1].style.display =('none')
@@ -100,5 +110,5 @@
         }
         //Deixar o background na cor cinza um pouco mais acisentado
         function nike2(){
-            cadastro_login.style.background = ('rgba(30, 30, 30, 0.5)')
+            cadastro_login.style.background = ('rgba(30, 30, 30, 0.2)')
         }

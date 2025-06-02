@@ -1,0 +1,44 @@
+body{
+    background-image: url('https://www.nike.com.br/images/meta/open-graph-main-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* garante que o fundo cubra toda a altura da tela */
+    margin: 0; /* remove espaçamentos padrão do body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Div onde os elementos irão se mover */
+#MASTER {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    
+    padding: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* div que sera os produtos e ira se mover */
+.box { 
+    background: #4caf50;
+    color: white;
+    padding: 15px;
+    width: 200px;
+    height: 30px;
+    position: relative; top: 42%; /*Define a posição na parte de baixo */ 
+    /* Começa mais abaixo e invisível */
+    opacity: 0.02;
+    transform: translateY(-1000%); /* Distancia que ele ira percorrer */
+    transition: opacity 10s ease, transform 5s ease; /* Tempo que ele ira perder a opacidade e levar para subir */
+}
+
+/* Quando o mouse passa por cima ela volta a fica visivel */
+.box:hover  {
+    opacity: 1000;
+    /*transform: translateY(-10px); /* Posição "pré-determinada" */
+}
