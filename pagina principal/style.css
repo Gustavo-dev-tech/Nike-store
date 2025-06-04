@@ -25,8 +25,8 @@ body{
 
 /* div que sera os produtos e ira se mover */
 .box { 
-    background: #4caf50;
-    color: white;
+    background-color: rgba(255, 255, 255, 12);
+    color: black;
     padding: 15px;
     width: 200px;
     height: 30px;
@@ -34,11 +34,11 @@ body{
     /* Começa mais abaixo e invisível */
     opacity: 0.02;
     transform: translateY(-1000%); /* Distancia que ele ira percorrer */
-    transition: opacity 10s ease, transform 5s ease; /* Tempo que ele ira perder a opacidade e levar para subir */
+    transition: opacity 10s ease, transform 10s ease; /* Tempo que ele ira perder a opacidade e levar para subir */
 }
-
 /* Quando o mouse passa por cima ela volta a fica visivel */
 .box:hover  {
-    opacity: 1000;
+    background-color: darkgray;
+    opacity: 100;
     /*transform: translateY(-10px); /* Posição "pré-determinada" */
 }
