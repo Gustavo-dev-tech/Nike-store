@@ -42,3 +42,21 @@ body{
     opacity: 100;
     /*transform: translateY(-10px); /* Posição "pré-determinada" */
 }
+.produtos{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+.divProduto{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
