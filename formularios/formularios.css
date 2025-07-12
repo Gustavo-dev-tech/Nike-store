@@ -10,6 +10,8 @@ body{
 }
 
 #cadastro_login {
+    position: relative;
+    margin-top: 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -25,12 +27,10 @@ body{
     
 }
 /*ANIMAÇÕES*/
-#TESTE{
+#Animacao{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /*background-color: rgba(255, 255, 255, 0.2); /* branco quase transparente */
-    
     position: relative; top: 90%;
     opacity: 0.7;
     transform: translateY(-110%); /* Distancia que ele ira percorrer */
@@ -46,13 +46,13 @@ body{
 }
 #cadastro_login:hover{
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #fff;
 }
 #cadastro_login:hover input {
-    background-color: white;
+    background-color: #fff;
 }
 #cadastro_login:hover label, p {
-    color: white;
+    color: #fff;
 }
 img{
     width: auto;
@@ -63,14 +63,14 @@ img{
     margin: 40px; /* remove espaçamentos padrão do body */
 }
 img:hover{
-    height: 12vh; 
+    height: 10vh; 
     cursor: pointer;
 }
 
 input{
     display: flex;
-    flex-direction:  inherit;
-    background-color: rgba(255, 255, 255, 0.05);
+/*    flex-direction:  inherit; */
+    background-color: rgba(255, 255, 255, 0.65);
     font-size: 15px;
     border-radius: 6px;
     width: 350px;
@@ -90,7 +90,7 @@ input{
     margin-top: -85px;
 }
 #Flogin, #Fcadastro{
-    color: black;
+    color: #fff;
     font-weight: bold
 }
 #Flogin:hover, #Fcadastro:hover{
@@ -101,14 +101,25 @@ input{
     display: none;
 }
 
-#enviar{
+#enviarL{
+    position: relative;
+    left: 37%;
+    margin-top: 2vh;
+    display: none;
     width: 100px;
     cursor: pointer;
+    border: none;
+}
+
+#enviarC{
+    width: 100px;
+    cursor: pointer;
+    border: none;
+    
     
 }
 
-
-#emailLogin, #senhaLogin, #enviarLogin, .labelLog{
+#emailLogin, #senhaLogin, #enviar, .labelLog{
     display: none;
     margin-top: 7px;
 }

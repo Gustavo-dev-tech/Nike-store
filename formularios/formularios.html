@@ -13,19 +13,19 @@
                     <!-- CADASTRO -->
         <div id="cadastro_login">
             <!--Animação do formulario subir-->
-            <div id="TESTE">
+            <div id="Animacao">
 
             <h1 id="titulo">Tela de Cadastro</h1>
             <img src="../imagens/Nike.webp" alt="Nike" ondblclick="nike2()" onclick="nike()">
             
             <!-- FORMULARIO DE CADASTRO -->
-            <form id="formCad" >    
+             <form id="formCad" action="" method="get" >
                 <label class="label" > Digite seu nome  
-                    <input type="text" id="nome" required >
+                    <input type="text" id="nome"  >
                 </label>
 
                 <label class="label">Digite seu e-mail 
-                <input type="email" id="email" required>
+                <input type="text" id="email" >
                 </label>
 
                 <label class="label">Digite sua senha
@@ -38,24 +38,27 @@
                 <label class="label">Confirme sua senha
                 <input type="password" id="confisenha">
                 </label>
+
+                <input type="submit" id="enviarC">
             </form>
-            <!-- LOGIN -->
-            <form id="Log">
+
+            <!-- LOGIN --> 
+            <form id="formLog" action="" method="get" >
                 
                 <label class="labelLog">Digite seu e-mail 
-                <input type="email" id="emailLogin" required>
-                </label>
+                <input type="email" id="emailLogin" ></label>
+                
                 <label class="labelLog">Digite sua senha 
-                <input type="password" id="senhaLogin" required>
-                </label>
+                <input type="password" id="senhaLogin" ></label>
 
+                <input type="submit" id="enviarL">
             </form>
 
             <p id="Flogin" onclick="Flogin()">Ja tem cadastro? Faça login aqui!
             </p>
             <p id="Fcadastro" onclick="Fcadastro()"> Faça cadastro aqui!
             </p>
-            <input type="submit" id="enviar" value="Cadastrar" onclick="Enviar()">
+            
             </div>
         </div>
        <script src="formularios.js"></script>
