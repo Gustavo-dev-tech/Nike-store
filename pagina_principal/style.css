@@ -21,11 +21,13 @@ body{
 #nikefundo{
     display: flex;
     position: fixed;
-    width: 700px;
-    height: 350px;
+    width: 40%;
+    max-width: 70vh;
+    height: 40%;
+    max-height: 30vh;
     justify-items: center;
     align-items: center;
-    top: 50%;
+    top: 60%;
 }
 
 #rodape{
@@ -35,7 +37,7 @@ body{
     max-width: 1950px;
     height: 14%;
     max-height: 90px;
-    background: linear-gradient(to right, #000000, #ffffff);
+    background: linear-gradient(rgb(25, 27, 34), rgb(200, 30, 45));
     border-top: 1px solid #ccc;
     }
 #nikerodape{
@@ -92,15 +94,13 @@ body{
 
 /* Titulos das categorias */
 .classe{
-    background: linear-gradient(to right, #000000 0%, #333333 25%, #ffffff 50%, #cccccc 75%, #000000 100%);
     text-align: center;
-    color: #000000;
+    color: white;
     font-size: 30px;
 }
 
 /* movimento dos produtos */
 .box {
-    background: linear-gradient(to right, #000000 0%, #333333 25%, #ffffff 50%, #cccccc 75%, #000000 100%);
     position: relative; 
     top: 35vh; /*Define a posição na parte de baixo */ 
     transform: translateY(-25vh); /* Distancia que ele ira percorrer */
@@ -114,7 +114,7 @@ body{
     display:inline-flex;
     margin-left: 4vh;
     margin-right: 4vh;
-    gap: 5vh;
+    gap: 5.5vh;
 }
 
 /* Dentro de cada DIV_produto */
@@ -134,13 +134,13 @@ body{
 
 
 /* preço dos produtos*/
-.price{
+/*.price{
     position: relative;
     top: 38%;
     text-align: end;
     color: black;
     z-index: 1;
-}
+}*/
 /* Para cada imagem dos produtos no menu inicial */
 .imagem_produto{
     position: relative;
@@ -165,11 +165,84 @@ body{
     
 }
 
-/* se a tela for menor que 768px */
-@media (max-width: 768px){
-    .container_produtos{
-    width: 100px;
-    height: 30px;
-    }
+/* tela de celular */
+@media (max-width: 600px){
 
+#nikefundo{
+    max-width: 30vh;
+    max-height: 10vh;
+    top: 60%;
+}
+
+#rodape{
+    max-width: 768px;
+    height: 14%;
+    max-height: 90px;
+    }
+#nikerodape{
+    width: 80px;
+    height: 40px;
+}
+/* div de Search buscador */
+#buscador{
+    top: -12px;
+    left: 30%;
+    width: 50vh;
+    height: auto;
+    
+}
+    /* Espaço para pesquisar */
+.procurar_inp{
+    position: relative;
+    padding-left: 10px;
+    width: 117px;
+    height: 23px;
+}
+    /*Botao pesquisar LUPA */
+.procurar_but{
+    position: relative;
+    left: 0%;
+    top: 8px;
+    margin-right: -3px;
+}
+/* Favoritos */
+#favoritos{
+    left: 10%;
+    font-size: 25px;
+}
+
+/* Titulos das categorias */
+.classe{
+    color: white;
+    font-size: 22px;
+}
+
+/* Div onde ficam os produtos */
+.container_produtos{
+    margin-left: -3px;
+    margin-right: -1px;
+    gap: 1.1vh;
+}
+
+/* Dentro de cada DIV_produto */
+.divProduto{
+    width: 5.5vh;
+    height: 10vh;
+}
+
+/* Para cada imagem dos produtos no menu inicial */
+.imagem_produto{
+    left: 2px;
+    width: 5.5vh;
+    height: 5.5vh;
+}
+.imagem_produto:hover{
+    left: -4.3px;
+    width: 6.5vh;
+    height: 6.5vh;
+}
+
+.titulo{
+    font-size: 8px;
+}
 }
